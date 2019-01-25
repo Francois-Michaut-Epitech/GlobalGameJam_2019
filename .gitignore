@@ -14,3 +14,4 @@ Library/metadata/*
 *.dll
 *.o
 *.obj
+*.mdb
