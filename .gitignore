@@ -11,3 +11,6 @@ Library/EditorInstance.json
 obj/*
 Library/metadata/*
 *.txt
+*.dll
+*.o
+*.obj
