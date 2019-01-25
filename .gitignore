@@ -6,3 +6,5 @@ Library/EditorInstance.json
 *.log
 *.info
 *.lock
+.vs/*
+obj/*
