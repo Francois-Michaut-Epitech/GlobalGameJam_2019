@@ -11,7 +11,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
-        private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
         
         private void Start()
@@ -35,15 +34,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
-            if (!m_Jump)
-            {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
-            if ((Input.GetKeyDown(KeyCode.I)))
-            {
-                Debug.Log("I key is pressed.");
-                m_Character.Move(Vector3.right, false, false);
-            }
+            
         }
 
 
@@ -73,8 +64,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 #endif
 
             // pass all parameters to the character control script
-            m_Character.Move(m_Move, crouch, m_Jump);
-            m_Jump = false;
+            m_Character.Move(m_Move, crouch, false);
         }
     }
 }
