@@ -3,3 +3,10 @@ Temp/*
 Temp
 Library/EditorInstance.json
 *.cache
+*.bin
+*.log
+*.info
+*.lock
+.vs/*
+obj/*
+Library/metadata/*
