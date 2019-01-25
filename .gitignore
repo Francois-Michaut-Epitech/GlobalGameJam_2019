@@ -2,3 +2,4 @@ Temp/UnityLockfile
 Temp/*
 Temp
 Library/EditorInstance.json
+*.cache
