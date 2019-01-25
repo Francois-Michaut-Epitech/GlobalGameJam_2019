@@ -39,6 +39,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+            if ((Input.GetKeyDown(KeyCode.I)))
+            {
+                Debug.Log("I key is pressed.");
+                m_Character.Move(Vector3.right, false, false);
+            }
         }
 
 
