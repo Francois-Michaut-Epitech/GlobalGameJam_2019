@@ -10,3 +10,4 @@ Library/EditorInstance.json
 .vs/*
 obj/*
 Library/metadata/*
+*.txt
