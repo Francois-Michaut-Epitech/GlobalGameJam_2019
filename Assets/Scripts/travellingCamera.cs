@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class travellingCamera : MonoBehaviour
 {
-    GameObject target;
+    public GameObject target;
 
     // Use this for initialization
     void Start()
     {
-        target = GameObject.Find("Ethan");
     }
 
     // Update is called once per frame
